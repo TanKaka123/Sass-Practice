@@ -1,5 +1,36 @@
+@import './variable.scss';
+
 .container{
     color:red;
-    font-size: 100px;
+    font-size: 20px;
     text-align: center;
+    background-color: $backgroundColor;
+    border : solid $borderColor 10px;
+}
+div{
+    // margin-left: calc(100% - 70%);
+    // margin-right: calc(100% - 70%);
+    max-width: 1000px;
+    background-color: $backgroundColor;
+    margin: 0 auto;
+    ul{
+    
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            list-style-type: none;  
+            margin-top: 50px;
+            margin-bottom: 50px;
+            a{
+                color: $textColor;
+                text-decoration:none;
+                font-weight : 900;
+                font-size: 30px;
+                &:hover{
+                    color :$textHover;
+                }
+            }
+        }
+    }
 }
